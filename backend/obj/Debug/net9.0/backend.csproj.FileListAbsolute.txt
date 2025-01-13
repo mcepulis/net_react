@@ -34,3 +34,7 @@ C:\projects\net_react\backend\obj\Debug\net9.0\ref\backend.dll
 C:\projects\net_react\backend\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
 C:\projects\net_react\backend\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\projects\net_react\backend\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\projects\net_react\backend\obj\Debug\net9.0\backend.sourcelink.json
+C:\projects\net_react\backend\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\projects\net_react\backend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\projects\net_react\backend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
