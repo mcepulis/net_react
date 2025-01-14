@@ -47,7 +47,7 @@ const QuizPage: React.FC = () => {
         Email: email,
         Answers: answers,
       });
-      alert(`Quiz submitted! Your score: ${response.data.Score}`);
+      alert(`Quiz submitted! Your score: ${response.data.score}`);
     } catch (error) {
       console.error("Error submitting quiz:", error);
     }
