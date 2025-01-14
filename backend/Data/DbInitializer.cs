@@ -7,6 +7,16 @@ public static class DbInitializer
     {
         if (!context.QuizQuestions.Any())
         {
+        context.QuizQuestions.Add(new QuizQuestion
+            {
+                QuestionText = "What is the capital of Lithuania?",
+                QuestionType = "Textbox",
+                Answers = new List<Answer>
+                {
+                    new Answer { Text = "Vilnius", IsCorrect = true }
+                }
+            });
+            
             context.QuizQuestions.Add(new QuizQuestion
             {
                 QuestionText = "What is the capital of France?",
