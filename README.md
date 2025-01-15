@@ -44,7 +44,7 @@ git clone https://github.com/mcepulis/net_react.git
 1. Visit [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download).
 2. Choose the latest version of the .NET SDK.
 
-### **Configuration in `./backend`**:
+### **Run configuration in `./backend`**:
 - Create a project:
   ```bash
   dotnet new webapi
@@ -55,7 +55,7 @@ git clone https://github.com/mcepulis/net_react.git
   dotnet add package Microsoft.EntityFrameworkCore.InMemory
   ```
 
-### **Configuration in `./frontend`**:
+### **Run configuration in `./frontend`**:
 1. Initialize npm:
    ```bash
    npm init -y
