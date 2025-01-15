@@ -1,6 +1,6 @@
 # 🌟 About
 
-This project is for educational purposes to deepen knowledge in React and .NET
+This project is for educational purposes to deepen knowledge in React and ASP.NET Core
 
 Site published at: [https://github.com/mcepulis/net_react](https://github.com/mcepulis/net_react)
 
