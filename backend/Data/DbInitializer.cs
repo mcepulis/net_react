@@ -1,128 +1,131 @@
-using Backend.Data;
+
 using Backend.Models;
 
-public static class DbInitializer
+namespace Backend.Data
 {
-    public static void Seed(AppDbContext context)
+    public static class DbInitializer
     {
-        if (!context.QuizQuestions.Any())
+        public static void Seed(AppDbContext context)
         {
-        context.QuizQuestions.Add(new QuizQuestion
+            if (!context.QuizQuestions.Any())
             {
-                QuestionText = "What is the capital of Lithuania?",
-                QuestionType = "Textbox",
-                Answers = new List<Answer>
+                context.QuizQuestions.Add(new QuizQuestion
                 {
-                    new() { Text = "Vilnius", IsCorrect = true }
-                }
-            });
+                    QuestionText = "What is the capital of Lithuania?",
+                    QuestionType = "Textbox",
+                    Answers =
+                    [
+                        new Answer { Text = "Vilnius", IsCorrect = true }
+                    ]
+                });
 
-            context.QuizQuestions.Add(new QuizQuestion
-            {
-                QuestionText = "What is the capital of France?",
-                QuestionType = "Radio",
-                Answers = new List<Answer>
+                context.QuizQuestions.Add(new QuizQuestion
                 {
-                    new() { Text = "Berlin", IsCorrect = false },
-                    new() { Text = "Madrid", IsCorrect = false },
-                    new() { Text = "Paris", IsCorrect = true }
-                }
-            });
+                    QuestionText = "What is the capital of France?",
+                    QuestionType = "Radio",
+                    Answers =
+                    [
+                        new Answer { Text = "Berlin", IsCorrect = false },
+                        new Answer { Text = "Madrid", IsCorrect = false },
+                        new Answer { Text = "Paris", IsCorrect = true }
+                    ]
+                });
 
-            context.QuizQuestions.Add(new QuizQuestion
-            {
-                QuestionText = "Select programming languages:",
-                QuestionType = "Checkbox",
-                Answers = new List<Answer>
+                context.QuizQuestions.Add(new QuizQuestion
                 {
-                    new() { Text = "C#", IsCorrect = true },
-                    new() { Text = "HTML", IsCorrect = false },
-                    new() { Text = "Python", IsCorrect = true }
-                }
-            });
+                    QuestionText = "Which db is open source?",
+                    QuestionType = "Checkbox",
+                    Answers =
+                    [
+                        new Answer { Text = "MySQL", IsCorrect = true },
+                        new Answer { Text = "Oracle DB", IsCorrect = false },
+                        new Answer { Text = "PostgreSQL", IsCorrect = true }
+                    ]
+                });
 
-             context.QuizQuestions.Add(new QuizQuestion
-            {
-                QuestionText = "What is the capital of China?",
-                QuestionType = "Radio",
-                Answers = new List<Answer>
+                context.QuizQuestions.Add(new QuizQuestion
                 {
-                    new() { Text = "Shanghai", IsCorrect = false },
-                    new() { Text = "Beijing", IsCorrect = true },
-                    new() { Text = "Guangzhou", IsCorrect = false }
-                }
-            });
+                    QuestionText = "What is the capital of China?",
+                    QuestionType = "Radio",
+                    Answers =
+                    [
+                        new Answer { Text = "Shanghai", IsCorrect = false },
+                        new Answer { Text = "Beijing", IsCorrect = true },
+                        new Answer { Text = "Guangzhou", IsCorrect = false }
+                    ]
+                });
 
-             context.QuizQuestions.Add(new QuizQuestion
-            {
-                QuestionText = "What is the capital of Germany?",
-                QuestionType = "Radio",
-                Answers = new List<Answer>
+                context.QuizQuestions.Add(new QuizQuestion
                 {
-                    new() { Text = "Berlin", IsCorrect = true },
-                    new() { Text = "Frankfurt", IsCorrect = false },
-                    new() { Text = "Dresden", IsCorrect = false }
-                }
-            });
+                    QuestionText = "What is the capital of Germany?",
+                    QuestionType = "Radio",
+                    Answers =
+                    [
+                        new Answer { Text = "Berlin", IsCorrect = true },
+                        new Answer { Text = "Frankfurt", IsCorrect = false },
+                        new Answer { Text = "Dresden", IsCorrect = false }
+                    ]
+                });
 
-             context.QuizQuestions.Add(new QuizQuestion
-            {
-                QuestionText = "What is the capital of Spain?",
-                QuestionType = "Radio",
-                Answers = new List<Answer>
+                context.QuizQuestions.Add(new QuizQuestion
                 {
-                    new() { Text = "Barselona", IsCorrect = false },
-                    new() { Text = "Madrid", IsCorrect = true },
-                    new() { Text = "Valencia", IsCorrect = false }
-                }
-            });
+                    QuestionText = "What is the capital of Spain?",
+                    QuestionType = "Radio",
+                    Answers =
+                    [
+                        new Answer { Text = "Barselona", IsCorrect = false },
+                        new Answer { Text = "Madrid", IsCorrect = true },
+                        new Answer { Text = "Valencia", IsCorrect = false }
+                    ]
+                });
 
-            context.QuizQuestions.Add(new QuizQuestion
-            {
-                QuestionText = "Select backend languages:",
-                QuestionType = "Checkbox",
-                Answers = new List<Answer>
+                context.QuizQuestions.Add(new QuizQuestion
                 {
-                    new() { Text = "Java", IsCorrect = true },
-                    new() { Text = "Javascript", IsCorrect = false },
-                    new() { Text = "PHP", IsCorrect = true }
-                }
-            });
+                    QuestionText = "Select backend languages:",
+                    QuestionType = "Checkbox",
+                    Answers =
+                    [
+                        new Answer { Text = "Java", IsCorrect = true },
+                        new Answer { Text = "Javascript", IsCorrect = false },
+                        new Answer { Text = "PHP", IsCorrect = true }
+                    ]
+                });
 
-            context.QuizQuestions.Add(new QuizQuestion
-            {
-                QuestionText = "Select frontend languages:",
-                QuestionType = "Checkbox",
-                Answers = new List<Answer>
+                context.QuizQuestions.Add(new QuizQuestion
                 {
-                    new() { Text = "Javascript", IsCorrect = false },
-                    new() { Text = "HTML", IsCorrect = true },
-                    new() { Text = "CSS", IsCorrect = true }
-                }
-            });
+                    QuestionText = "Select frontend languages:",
+                    QuestionType = "Checkbox",
+                    Answers =
+                    [
+                        new Answer { Text = "Javascript", IsCorrect = true },
+                        new Answer { Text = "HTML", IsCorrect = true },
+                        new Answer { Text = "CSS", IsCorrect = true }
+                    ]
+                });
 
-            context.QuizQuestions.Add(new QuizQuestion
-            {
-                QuestionText = "which city is the second largest in Lithuania?",
-                QuestionType = "Textbox",
-                Answers = new List<Answer>
+                context.QuizQuestions.Add(new QuizQuestion
                 {
-                    new() { Text = "Kaunas", IsCorrect = true }
-                }
-            });
+                    QuestionText = "Which city is the second largest in Lithuania?",
+                    QuestionType = "Textbox",
+                    Answers =
+                    [
+                        new Answer { Text = "Kaunas", IsCorrect = true }
+                    ]
+                });
 
-            context.QuizQuestions.Add(new QuizQuestion
-            {
-                QuestionText = "console.log(\"1\" === 1)?",
-                QuestionType = "Radio",
-                Answers = new List<Answer>
+                context.QuizQuestions.Add(new QuizQuestion
                 {
-                    new() { Text = "true", IsCorrect = false },
-                    new() { Text = "false", IsCorrect = true },
-                }
-            });
+                    QuestionText = "console.log(\"1\" === 1)?",
+                    QuestionType = "Radio",
+                    Answers =
+                    [
+                        new Answer { Text = "true", IsCorrect = false },
+                        new Answer { Text = "false", IsCorrect = true }
+                    ]
+                });
 
-            context.SaveChanges();
+                context.SaveChanges();
+            }
         }
     }
 }

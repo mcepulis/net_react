@@ -1,7 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using Backend.Data;
-using Backend.Models;
-using Backend.DTOs;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
