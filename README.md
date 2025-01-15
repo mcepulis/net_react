@@ -45,16 +45,13 @@ git clone https://github.com/mcepulis/net_react.git
 2. Choose the latest version of the .NET SDK.
 
 ### **Run configuration in `./backend`**:
-- Create a project:
-  ```bash
-  dotnet new webapi
-  ```
-- Install EF Core:
-  ```bash
-  dotnet add package Microsoft.EntityFrameworkCore
-  dotnet add package Microsoft.EntityFrameworkCore.InMemory
-  ```
 
+  ```bash
+  dotnet restore
+  ```
+   ```bash
+  dotnet run
+  ```
 ### **Run configuration in `./frontend`**:
 1. Initialize npm:
    ```bash
