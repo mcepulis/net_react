@@ -53,26 +53,13 @@ git clone https://github.com/mcepulis/net_react.git
   dotnet run
   ```
 ### **Run configuration in `./frontend`**:
-1. Initialize npm:
+
    ```bash
-   npm init -y
-   ```
-2. Install React and other necessary packages:
+  npm install
+  ```
    ```bash
-   npm install react react-dom typescript @types/react @types/react-dom
-   ```
-3. Install development dependencies:
-   ```bash
-   npm install --save-dev webpack webpack-cli webpack-dev-server babel-loader @babel/core @babel/preset-env @babel/preset-react typescript ts-loader
-   ```
-4. Install other useful packages:
-   ```bash
-   npm install --save-dev html-webpack-plugin style-loader css-loader
-   npm install -D tailwindcss postcss autoprefixer
-   npx tailwindcss init
-   npm install react-router-dom
-   npm install axios
-   ```
+  npm run start
+  ```
 
 ## 🧪 Running tests
 
