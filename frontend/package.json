@@ -12,6 +12,9 @@
   "author": "Mike  Pukuotukas (https://github.com/mcepulis)",
   "license": "MIT",
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.0",
     "@types/react": "^19.0.6",
     "@types/react-dom": "^19.0.3",
     "axios": "^1.7.9",
