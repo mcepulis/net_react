@@ -40,7 +40,7 @@ git clone https://github.com/mcepulis/net_react.git
 
 ## 🏃 Installation
 
-### **Download and install - NET SDK**:
+### **dotNET SDKDownload and install**:
 1. Visit [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download).
 2. Choose the latest version of the .NET SDK.
 ### **NodeJS - download and install**:
