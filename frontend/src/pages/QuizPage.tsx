@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from '../Navbar';
+import { useNavigate } from 'react-router-dom';
 
 interface Answer {
   id: number;
@@ -25,6 +26,7 @@ const QuizPage: React.FC = () => {
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [email, setEmail] = useState('');
   const [answers, setAnswers] = useState<UserAnswer[]>([]);
+  const navigate = useNavigate()
 
   useEffect(() => {
     const fetchQuestions = async () => {
@@ -66,6 +68,13 @@ const QuizPage: React.FC = () => {
         (el as HTMLInputElement).checked = false;
         (el as HTMLInputElement).value = '';
       });
+
+      try {
+        navigate('/high-scores');
+      } catch (error) {
+        console.error('Navigation error:', error);
+      }
+
     } catch (error) {
       console.error('Error submitting quiz:', error);
     }
