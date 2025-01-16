@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import QuizPage from './pages/QuizPage';
-import HighScoresPage from './pages/HighScoresPage'; // Placeholder for high scores
+import HighScoresPage from './pages/HighScoresPage';
 
 const App: React.FC = () => {
   return (

@@ -8,14 +8,9 @@ namespace Backend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class QuizController : ControllerBase
+    public class QuizController(AppDbContext context) : ControllerBase
     {
-        private readonly AppDbContext _context;
-
-        public QuizController(AppDbContext context)
-        {
-            _context = context;
-        }
+        private readonly AppDbContext _context = context;
 
         [HttpGet("questions")]
         public async Task<IActionResult> GetQuestions()
